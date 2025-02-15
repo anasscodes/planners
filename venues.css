@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  ::selection {
+    background-color: #FF6780;
+    color: white;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+    /* background: #A7CF40; */
+  }
+  /*####################### Nav Start #######################*/
+nav .up {
+    border-radius: 20px;
+    border: 2px solid #da1c4bc2;
+    text-decoration: none;
+    color: rgb(212, 221, 221);
+    /* background: rgb(48, 36, 36); */
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: 1s;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 18px;
+  }
+  .up:hover {
+    background: #da1c4b;
+  }
+  nav {
+    height: 55px;
+    /* background: #2c3e5000; */
+    width: 100%;
+    position: absolute;
+  }
+  nav img {
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    cursor: pointer;
+  }
+  nav ul {
+    float: right;
+    margin-top: 25px;
+    margin-right: 130px;
+  }
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+    line-height: 80%;
+  }
+  nav ul li a {
+    color:#dad8d8;
+    position: relative;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  /************ Under line**************/
+  nav ul li a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #da1c4b;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s linear;
+  }
+  nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  /******* Icon menu**********/
+nav label #open,
+nav label #close {
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+
+/*################################**VENUES**#########*/
+.venues {
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to right , rgba(0, 38, 82, 0.5) , rgba(78, 77, 77, 0.568)), url(../img_Married/wedding-venue-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    padding-top: 200px;
+  }
+  .venues h6 {
+    font-size: 24px;
+    color: white;
+    padding-bottom: 20px;
+    text-shadow: 0 4px 10px #000000;
+  }
+  .devider {
+    width: 62.39px;
+    height: 2px;
+    background: #da1c4b;
+    margin: auto;
+  }
+  .venues h1 {
+    padding-bottom: 20px;
+    font-size: 90px;
+    color: white;
+    text-shadow: 0 4px 10px #000000;
+  }
+
+  /*################################**TWO**#########*/
+
+.two{
+    width: 100%;
+    height: 130vh;
+    background: #f5f5f5;
+    padding-top: 80px; 
+  }
+  .perant{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .itmes{
+    background-color: white;
+    height: 700px ;
+    width: 580px ;
+    text-align: center;
+  }
+  .two .itmes .img{
+    padding-top: 20px;
+    height: 350px ;
+    width: 525px;
+    
+  }
+  .two .itmes .num{
+    font-size: 30px;
+    color: #000000ce;
+  }
+  .two .itmes .num1{
+    font-size: 20px;
+    color: #000000d2;
+  }
+  .two .itmes .flx{
+    display: flex;
+    padding-left: 170px;
+  }
+  .two .itmes .flx .h{
+    padding-left: 10px;
+  }
+  .two .itmes .flx b{
+    padding-left: 10px;
+  }
+  .two .itmes .flx {
+    color: #3a4664f3;
+  }
+
+/*################################**THREE**#########*/
+    
+    .three{
+        width: 100%;
+        height: 145vh;
+        background: #f5f5f5;
+        /* padding-top: 30px;  */
+      }
+      .perant{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .itmes{
+        background-color: white;
+        height: 700px ;
+        width: 580px ;
+        text-align: center;
+      }
+      .three .itmes .img{
+        padding-top: 20px;
+        height: 350px ;
+        width: 525px;
+        
+      }
+      .three .itmes .num{
+        font-size: 30px;
+        color: #000000ce;
+      }
+      .three .itmes .num1{
+        font-size: 20px;
+        color: #000000d2;
+      }
+      .three .itmes .flx{
+        display: flex;
+        padding-left: 170px;
+      }
+      .three .itmes .flx .h{
+        padding-left: 10px;
+      }
+      .three .itmes .flx b{
+        padding-left: 10px;
+      }
+      .three .itmes .flx {
+        color: #3a4664f3;
+      }
+      .three .a .btn3 {
+        color: #000000;
+        width: 100%;
+        height: 48px;
+          font-size: 16px;
+          padding: 17px 40px;
+          /* background-color: #da1c4b; */
+          border: 2px solid #da1c4b;
+          /* color: white; */
+          text-decoration: none;
+          border-radius: 30px 60px;
+          transition: 1s;
+      }
+      .three .a .btn3:hover {
+        color: #ffffff;
+        background-color: #da1c4b;
+      }
+      .three .a {
+        padding-top: 90px;
+        padding-left: 580px;
+      }
+      
+      /*################################**FOOR**#########*/
+
+ .foor{
+    width: 100%;
+    height: 101vh;
+    /* background: #f5f5f5; */
+    /* padding-top: 35px;  */
+    display: flex;
+    
+  }
+  .background3{
+    height: 614px;
+    width: 676px;
+    background:#FF4362;
+    text-align: center;
+  }
+  .background3 img{
+    padding-top: 210px;
+  }
+  .background3 .bkd p{
+  color: white;
+  }
+  .background3 .bkd h1{
+    color: white;
+    font-size: 60px;
+  }
+  .background3 .bkd .fa-facebook{
+    height: 15px;
+    width: 15px;
+    font-size: 18px;
+    background: #ffffff;
+    border-radius: 50%;
+    color: #FF6780;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .background3 .bkd .fa-instagram{
+    height: 15px;
+    width: 15px;
+    font-size: 18px;
+    background: #ffffff;
+    border-radius: 50%;
+    color: #FF6780;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .background3 .bkd .fa-twitter{
+    height: 15px;
+    width: 15px;
+    font-size: 18px;
+    background: #ffffff;
+    border-radius: 50%;
+    color: #FF6780;
+    padding: 15px;
+    cursor: pointer;
+  }
+  .background3 .bkd .fa-youtube{
+    height: 15px;
+    width: 15px;
+    font-size: 18px;
+    background: #ffffff;
+    border-radius: 50%;
+    color: #FF6780;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .form{
+  width: 30%;
+  text-align: center;
+  margin-left: 100px;
+  padding-top: 60px; 
+  color: #000000cc;
+  }
+  .form h1 {
+    font-size: 43px;
+  }
+  .form p {
+    font-size: 18px;
+  }
+  .form .f {
+    text-align: justify;
+    border: 1px solid black;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    background-color: #f8f8f88e;
+    color: #000000;
+  }
+  .form .f2{
+    text-align: justify;
+    border: 1px solid black;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 100px;
+    padding-left: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    background-color: #f8f8f88e;
+    color: #000000;
+  }
+  .form .btn {
+    color: #000000;
+    width: 100%;
+    height: 48px;
+      font-size: 16px;
+      padding: 17px 40px;
+      /* background-color: #da1c4b; */
+      border: 2px solid #da1c4b;
+      /* color: white; */
+      text-decoration: none;
+      border-radius: 30px 60px;
+      transition: 1s;
+      cursor: pointer;
+  }
+  .form .btn:hover {
+    color: #ffffff;
+    background-color: #da1c4b;
+  }
+  
+  /*################################**FOOTER**#########*/
+  footer{
+    height: 131px;
+    width: 100%;
+  background:#252D41;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  }
+  footer .n1{
+  padding-top: 50px;
+  padding-left: 60px;
+  color: #dad8d8;
+  }
+  footer .n2{
+    padding-top: 50px;
+    padding-right: 60px;
+    color: #dad8d8;
+    }
+    footer .n3 img{
+      padding-top: 10px;
+      width: 140px;
+      font-size: 10px;
+      cursor: pointer;
+      }

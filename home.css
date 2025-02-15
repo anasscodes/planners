@@ -1,0 +1,688 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  ::selection {
+    background-color: #FF6780;
+    color: white;
+  }
+  body {
+    font-family: "Montserrat", sans-serif;
+    /* background: #A7CF40; */
+  }
+
+  /*####################### Nav Start #######################*/
+nav .up {
+    border-radius: 20px;
+    border: 2px solid #da1c4bc2;
+    text-decoration: none;
+    color: rgb(212, 221, 221);
+    /* background: rgb(48, 36, 36); */
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: 1s;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 18px;
+  }
+  .up:hover {
+    background: #da1c4b;
+  }
+  nav {
+    height: 55px;
+    /* background: #2c3e5000; */
+    width: 100%;
+    position: absolute;
+  }
+  nav img {
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    cursor: pointer;
+  }
+  nav ul {
+    float: right;
+    margin-top: 25px;
+    margin-right: 130px;
+  }
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+    line-height: 80%;
+  }
+  nav ul li a {
+    color:#dad8d8;
+    position: relative;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  /************ Under line**************/
+  nav ul li a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: #da1c4b;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s linear;
+  }
+  nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  /******* Icon menu**********/
+nav label #open,
+nav label #close {
+  color: white;
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+/*################################**Hero**#########*/
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right , rgba(0, 0, 0, 0.452) , rgba(0, 0, 0, 0.411)), url(../img_Married/weeding-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    padding-top: 200px;
+  }
+  .hero .p2 {
+    font-size: 24px;
+    color: white;
+    padding-bottom: 20px;
+    text-shadow: 0 4px 10px #000000;
+  }
+  .devider {
+    width: 62.39px;
+    height: 2px;
+    background: #da1c4b;
+    margin: auto;
+  }
+  .hero h1 {
+    padding-bottom: 20px;
+    font-size: 160px;
+    color: white;
+    text-shadow: 0 4px 10px #000000;
+  }
+  .hero p {
+    padding-bottom: 120px;
+    font-size: 35px;
+    color: white;
+    text-shadow: 0 4px 10px #000000;
+  }
+  .btn {
+    width: 171px;
+    height: 48px;
+    font-size: 16px;
+    padding: 17px 40px;
+    /* background-color: #da1c4b; */
+    border: 2px solid #da1c4b;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px 60px;
+    transition: 1s;
+  }
+  .btn:hover {
+    background:  #da1c4b;
+  }
+
+/*################################**Two**#########*/
+.two {
+    width: 100%;
+    height: 175vh;
+    background: #f5f5f5;
+    text-align: center;
+    padding-top: 90px;
+  }
+  .two .flex{
+    display: flex;
+    justify-content: space-evenly;
+  }
+.two .img{
+  height: 455px;
+  width: 625px;
+  display: flex;
+}
+.two .text{
+  width: 30%;
+    text-align: justify;
+    display: block;
+    padding-top: 40px;
+
+}
+.two .b{
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.63);
+  text-decoration: none;
+  color: rgb(212, 221, 221);
+  background: #da1c4b;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: 1s;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 18px;
+}
+.b:hover {
+  background: #da1c4b49;
+}
+.two h1 {
+  padding-top: 20px;
+  font-size: 50px;
+}
+.two .u{
+  margin-top: 120px;
+  color: #dad8d8;
+}
+
+.two .icon{
+  padding-top: 30px;
+display: flex;
+justify-content: space-evenly;
+
+}
+.two .icon h1{
+  padding-bottom: 20px;
+  font-size: 20px;
+  color:#000000d0;
+  }
+ .icon p {
+  color:#00000096;
+ }
+  
+ 
+ /*################################**Three**#########*/
+
+ .three {
+  width: 100%;
+  height: 110vh;
+  background: #f5f5f5;
+  background-image: url(../img_Married/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: justify;
+}
+
+.three .ree {
+  text-align: center;
+  padding-top: 180px;
+  width: 50%; /*ila bghiti tjib chi paragraphe janeb dir 'Width'*/
+  margin-right: 60%;
+}
+.ree h3 {
+  /* font-size: 24px; */
+  color: white;
+  padding-bottom: 18px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 10px black;
+  text-align: justify;
+  padding-left: 45px;
+}
+
+.ree h1 {
+  font-size: 50px;
+  color: white;
+  padding-bottom: 18px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 10px black;
+  text-align: justify;
+  padding-left: 45px;
+}
+.ree p {
+  padding-top: 15px;
+  text-align: justify;
+  padding-left: 45px;
+  color: white;
+  font-size: 15px;
+}
+
+.three .ree2 {
+  text-align: center;
+  width: 50%; /*ila bghiti tjib chi paragraphe janeb dir 'Width'*/
+  margin-right: 60%;
+}
+.ree2 h1 {
+  font-size: 30px;
+  color: #FF6780;
+  padding-bottom: 18px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 10px black;
+  text-align: justify;
+  padding-left: 45px;
+}
+.ree2 p {
+  padding-top: 15px;
+  text-align: justify;
+  padding-left: 45px;
+  color: white;
+  font-size: 15px;
+}
+
+.ree2 .fa-facebook{
+  color:#0867ffe0;
+  font-size: 33px;
+  cursor: pointer;
+}
+
+.ree2 .fa-instagram{
+  height: 35px;
+  width: 35px;
+  background: linear-gradient(#6459cae1, #bc3190e8 30%, #e33f60e8 50%, #f77538ea 70%, #fec66de0 100%);
+  border-radius: 35%;
+  font-size: 33px;
+  color: rgba(233, 228, 228, 0.884);
+  cursor: pointer;
+
+}
+.ree2 .fa-twitter{
+  color:rgba(0, 160, 253, 0.897);
+  font-size: 33px;
+  cursor: pointer;
+}
+.ree2 .fa-youtube{
+  color:rgba(255, 0, 0, 0.877);
+  font-size: 33px;
+  cursor: pointer;
+}
+
+
+ /*################################**Four**#########*/
+ .four{
+  width: 100%;
+  height: 130vh;
+  background: #f5f5f5;
+  /* text-align: center; */
+  padding-top: 90px;
+ }
+.four .perant{
+display: flex;
+justify-content: space-evenly;
+padding: 35px;
+
+}
+.four .gallery{
+  /* height: 100px; */
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 20PX;
+}
+.four .gallery img{
+  height: 600px;
+  width:350PX;
+  border-radius: 5px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  transition: 0.3s ease;
+}
+.four .gallery img:hover{
+  transform: scale(1.1);
+}
+.four .gallery .img1{
+  height: 335px;
+  width:250PX;
+}
+.four .gallery .img2{
+  height: 250px;
+  width:250PX;
+}
+
+.four .txt4{
+  /* width: 30%; */
+    text-align: justify;
+    display: block;
+    padding-top: 100px;
+
+}
+.four .txt4 h1 {
+  font-size: 50px;
+}
+.four .txt4 h4 {
+  font-size: 20px;
+  color:rgba(0, 0, 0, 0.719);
+}
+.four .txt4 p {
+ 
+  color:rgba(0, 0, 0, 0.719);
+}
+
+.four .txt4 .btn {
+ border: 1px solid #da1c4b;
+  color:rgba(0, 0, 0, 0.719);
+}
+
+/*################################**Five**#########*/
+
+.five{
+  width: 100%;
+    height: 100vh;
+     background: url(../img_Married/pic16.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    padding-top: 200px;
+}
+.five .p3 {
+  font-size: 24px;
+  color: white;
+  padding-top: 18px;
+  text-shadow: 0 4px 10px #000000cc;
+}
+.five .h1 {
+  font-size: 160px;
+  color: white;
+  text-shadow: 0 4px 10px #000000c4;
+}
+.five .p4 {
+  font-size: 40px;
+  color: #ff6780ee;
+  padding-bottom: 20px;
+}
+.five .btn{
+  font-size: 25px;
+}
+
+/*################################**Six**#########*/
+
+.six{
+  width: 100%;
+  height: 75vh;
+  background: #f5f5f5;
+  text-align: center;
+  /* padding-top: 95px; */
+}
+.six .fl{
+  display: flex;
+  justify-content: space-evenly;
+   padding: 95px;
+}
+.six .p5 {
+  font-size: 30px;
+  padding-top: 30px;
+  color: #000000af;
+
+}
+.six .h5 {
+  font-size: 30px;
+  color: #f5798eea;
+
+}
+
+/*################################**Seven**#########*/
+
+.seven{
+  width: 100%;
+  height: 150vh;
+  background: #f5f5f5;
+  padding-top: 85px; 
+}
+.seven .pd{
+  padding-left: 50px;
+  font-size: 19px;
+  color: #5e5e5e;
+}
+.seven .pd2{
+  padding-left: 50px;
+  font-size: 60px;
+  color: #000000d5;
+}
+.seven .gallery2{
+  /* width:100%; */
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 12PX;
+  padding: 0px 50px 0px 50px;
+}
+.seven .gallery2 img:hover{
+  transform: scale(1.1);
+}
+.seven .gallery2 .img3{
+  height: 345px;
+  width: 384px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+.seven .gallery2 .img4{
+  height: 345px;
+  width: 384px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.seven .gallery2 .img5{
+  height: 345px;
+  width: 384px;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/*################################**Eight**#########*/
+.eight{
+  width: 100%;
+  height: 101vh;
+  /* background: #f5f5f5; */
+  padding-top: 35px; 
+  display: flex;
+  
+}
+.background{
+  height: 613px;
+  width: 676px;
+  background:#FF4362;
+  text-align: center;
+}
+.background img{
+  padding-top: 210px;
+}
+.background .bkd p{
+color: white;
+}
+.background .bkd h1{
+  color: white;
+  font-size: 60px;
+}
+.background .bkd .fa-facebook{
+  height: 15px;
+  width: 15px;
+  font-size: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #FF6780;
+  padding: 15px;
+  cursor: pointer;
+}
+.background .bkd .fa-instagram{
+  height: 15px;
+  width: 15px;
+  font-size: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #FF6780;
+  padding: 15px;
+  cursor: pointer;
+}
+.background .bkd .fa-twitter{
+  height: 15px;
+  width: 15px;
+  font-size: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #FF6780;
+  padding: 15px;
+  cursor: pointer;
+}
+.background .bkd .fa-youtube{
+  height: 15px;
+  width: 15px;
+  font-size: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+  color: #FF6780;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.form{
+width: 30%;
+text-align: center;
+margin-left: 100px;
+padding-top: 60px; 
+color: #000000cc;
+}
+.form h1 {
+  font-size: 43px;
+}
+.form p {
+  font-size: 18px;
+}
+.form .f {
+  text-align: justify;
+  border: 1px solid black;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+  background-color: #f8f8f88e;
+  color: #000000;
+}
+.form .f2{
+  text-align: justify;
+  border: 1px solid black;
+  width: 100%;
+  height: 40px;
+  padding-bottom: 100px;
+  padding-left: 10px;
+  font-size: 16px;
+  text-transform: capitalize;
+  background-color: #f8f8f88e;
+  color: #000000;
+}
+.form .btn {
+  color: #000000;
+  width: 100%;
+}
+.form .btn:hover {
+  color: #ffffff;
+}
+
+/*################################**FOOTER**#########*/
+footer{
+  height: 131px;
+  width: 100%;
+background:#252D41;
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+footer .n1{
+padding-top: 50px;
+padding-left: 60px;
+color: #dad8d8;
+}
+footer .n2{
+  padding-top: 50px;
+  padding-right: 60px;
+  color: #dad8d8;
+  }
+  footer .n3 img{
+    padding-top: 10px;
+    width: 140px;
+    font-size: 10px;
+    cursor: pointer;
+    }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*#########################**Responsive Navbar**######################################*/
+@media (max-width: 700px) {
+    nav label #open{
+        display: block;
+    }
+    nav .up{
+       right: 80%;
+    }
+    nav{
+        background-color: black;
+        
+    }
+    
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 450px;
+        background: #95bfec65; 
+        border-radius: 30% ;
+        top: -100%;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+        transition: all .5s;
+    }
+    nav img{
+        width: 35px;
+        top: 20px;
+    }
+    #check:checked ~ ul{
+        top: 30px;
+    }
+    #check:checked ~ #open{
+        display: none;
+    }
+    #check:checked ~ #close{
+        display: block;
+    }
+    
+}
